@@ -64,11 +64,6 @@ public abstract class AppDataBase extends RoomDatabase {
             for (int i = 0; i < 3; i++)
                 projectDao.insertProject(Project.getAllProjects()[i]);
 
-            taskDao.insert(new Task(0,1L,"Nettoyer les vitres",new Date().getTime()));
-            taskDao.insert(new Task(0,2L,"Vider le lave vaiselle",new Date().getTime()));
-            taskDao.insert(new Task(0,2L,"Passer l'aspirateur",new Date().getTime()));
-            taskDao.insert(new Task(0,1L,"Arroser les plantes",new Date().getTime()));
-            taskDao.insert(new Task(0,3L,"Nettoyer les toilettes",new Date().getTime()));
             return null;
         }
     }
